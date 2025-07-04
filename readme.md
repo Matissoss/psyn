@@ -28,9 +28,9 @@ Here are the reserved ones:
 - `(\[/\<) NAME (\]/\>)` = optional/needed static value
 - `...? NAME:TYPE...` = (WITH SPACE) typed variable of name `NAME` and type `TYPE`
 - `...N. NODE...` = (WITH SPACE) if `N`th pattern of switching pattern is chosen, then `NODE` is a optional/needed/static
-- `<*NAME*>` = needed abbreviation
-- `[*NAME*]` = optional abbreviation
-- `*NAME* = NODE` - abbreviation definition
+- `...*NAME*...` = needed/optional abbreviation
+- `*ABBR* = NODE` - abbreviation definition
+- `*ABBR* = *OABBR* where: <? EVERY_ARGUMENT:TheirTypes>` = abbreviation definition using other abbreviation as template
 - `<!>` = nothing else can be on the same line.
 
 If you want the whole `psyn` syntax explaination in `psyn` then here it is: 
